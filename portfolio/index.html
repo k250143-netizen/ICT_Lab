@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shahamat Shakeel - Portfolio</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="sidebar" id="sidebar">
+    <div class="logo">Shahamat</div>
+    <nav>
+        <a href="#home"><i class="fa fa-home"></i> Home</a>
+        <a href="#about"><i class="fa fa-user"></i> About</a>
+        <a href="#projects"><i class="fa fa-briefcase"></i> Projects</a>
+        <a href="#contact"><i class="fa fa-envelope"></i> Contact</a>
+    </nav>
+</div>
+
+<header>
+    <div class="menu-toggle" id="menu-toggle"><i class="fa fa-bars"></i></div>
+    <div class="header-title">Portfolio</div>
+</header>
+
+<div id="overlay"></div>
+
+<main>
+    <section id="home" class="home">
+        <div class="home-text">
+            <h1 id="intro-text">Hello, I'm <span>Shahamat Shakeel</span></h1>
+            <p>Web Developer & Designer creating modern, responsive, and clean websites.</p>
+            <a href="#contact" class="btn">Contact Me</a>
+        </div>
+    </section>
+
+<section id="about" class="about">
+    <div class="section-title"><h1>About Me</h1></div>
+    <div class="about-content">
+        <div>
+            <h2>Profile</h2>
+            <p>Hello! I'm Shahamat Shakeel, passionate about web development and design.</p>
+        </div>
+        <div>
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML, CSS, JavaScript</li>
+                <li>C Programming</li>
+                <li>Responsive Web Design</li>
+            </ul>
+        </div>
+        <div>
+            <h2>Education</h2>
+            <p>Bachelor's in AI from FAST-NUCES (Continued)</p>
+        </div>
+        <div>
+            <h2>Experience</h2>
+            <p>Created my first Portfolio Website and several beginner projects in web development.Built Order Reservation System in C-Programing</p>
+        </div>
+    </div>
+</section>
+
+
+    <section id="projects" class="projects">
+        <div class="section-title"><h1>Projects</h1></div>
+        <div class="project-list">
+            <div class="project-item">
+                <h2>ICT Lab Projects</h2>
+                <p>Projects uploaded for ICT Lab work in C programming and Web development.</p>
+                <a href="https://github.com/k250143-netizen/PF_Lab_CL1002.git" target="_blank" class="btn">View Repo</a>
+            </div>
+            <div class="project-item">
+                <h2>Portfolio Website</h2>
+                <p>My personal portfolio showcasing skills, projects, and contact information.</p>
+                <a href="https://github.com/k250143-netizen/ICT_Lab.git" class="btn">View</a>
+            </div>
+            <div class="project-item">
+                <h2>Project in C</h2>
+                <p>Order Reservation System for Management</p>
+                <a href="https://github.com/k250143-netizen/PF_Lab_CL1002.git" class="btn">View</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="section-title"><h1>Contact Me</h1></div>
+        <div class="info-cards">
+            <div class="info-card">
+                <i class="fa fa-phone fa-2x"></i>
+                <h2>Phone</h2>
+                <p>03041619915</p>
+            </div>
+            <div class="info-card">
+                <i class="fa fa-envelope fa-2x"></i>
+                <h2>Email</h2>
+                <p>k250143@nu.edu.pk</p>
+            </div>
+            <div class="info-card">
+                <i class="fab fa-linkedin fa-2x"></i>
+                <h2>LinkedIn</h2>
+                <a href="https://www.linkedin.com/in/shahamat-shakil-55a8a427a" target="_blank">Visit</a>
+            </div>
+            <div class="info-card">
+                <i class="fab fa-facebook fa-2x"></i>
+                <h2>Facebook</h2>
+                <a href="https://www.facebook.com/profile.php?id=100075860160808" target="_blank">Visit</a>
+            </div>
+            <div class="info-card">
+                <i class="fab fa-github fa-2x"></i>
+                <h2>GitHub</h2>
+                <a href="https://github.com/shahamatshakeel-ux" target="_blank">Visit</a>
+            </div>
+        </div>
+        <a href="#home" class="btn">Back to Top</a>
+    </section>
+</main>
+
+<script>
+const toggleBtn = document.getElementById('menu-toggle');
+const sidebar = document.getElementById('sidebar');
+const overlay = document.getElementById('overlay');
+
+toggleBtn.addEventListener('click', () => {
+    sidebar.classList.toggle('active');
+    overlay.classList.toggle('active');
+});
+
+overlay.addEventListener('click', () => {
+    sidebar.classList.remove('active');
+    overlay.classList.remove('active');
+});
+
+window.addEventListener('load', () => {
+    document.getElementById('intro-text').classList.add('show');
+});
+</script>
+
+</body>
+</html>
